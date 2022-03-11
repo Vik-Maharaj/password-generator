@@ -1,14 +1,41 @@
-// Assignment Code
+// this prompts the user when they first clicks the button
+
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+var startVPasswordGenerator = function() {
+  window.alert("Hello There");
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", startVPasswordGenerator);
+
+// startVPasswordGenerator();
+
+
+
+// this returns a value to the text field after running through the prompts
+
+function writePasswordToField() {
+    var password = "hello again";
+    var passwordText = document.querySelector("#password");
+  
+    passwordText.value = password;
+}
+
+generateBtn.addEventListener("click", writePasswordToField);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
