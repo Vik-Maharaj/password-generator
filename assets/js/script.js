@@ -3,12 +3,30 @@
 var generateBtn = document.querySelector("#generate");
 
 var startVPasswordGenerator = function() {
-  window.alert("Hello There");
+  var userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 8 and 128 characters)');
+  console.log(userCharLength);
+
+  var userLowerCaseOrNo = window.prompt('Would you like your password to include lowercase characters?');
+  console.log(userLowerCaseOrNo);
+
+  var userUpperCaseOrNo = window.prompt('Would you like your password to include uppercase characters?');
+  console.log(userUpperCaseOrNo);
+
+  var userNumericCharOrNo = window.prompt('Would you like your password to include numeric characters?');
+  console.log(userNumericCharOrNo);
+
+  var userSpecCharOrNo = window.prompt('Would you like your password to include special characters?');
+  console.log(userSpecCharOrNo);
+
 }
 
 generateBtn.addEventListener("click", startVPasswordGenerator);
 
-// startVPasswordGenerator();
+
+
+
+
+
 
 
 
