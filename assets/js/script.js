@@ -10,7 +10,8 @@ var randomizerCalculator;
 var randomizerValue;
 
 
-// generator logic
+
+// functions to calculate the various prompt responses
 
 function randomizer01() {
   var text = "";
@@ -152,9 +153,7 @@ function randomizer15() {
 
 
 
-
-
-
+// function to gather user inputs and conditional statements to sort input criteria
 
 var startVPasswordGenerator = function() {
   userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 1 and 128 characters)');
@@ -255,8 +254,7 @@ generateBtn.addEventListener("click", startVPasswordGenerator);
 
 
 
-
-// this returns a value to the text field after running through the prompts
+// function to return a value after calculating the prompt responses
 
 function writePasswordToField() {
     var password = randomizerValue();
