@@ -6,7 +6,8 @@ var userLowerCaseOrNo;
 var userUpperCaseOrNo;
 var userNumericCharOrNo;
 var userSpecCharOrNo;
-
+var randomizerCalculator;
+var randomizerValue;
 
 
 // generator logic
@@ -159,40 +160,52 @@ var startVPasswordGenerator = function() {
   userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 1 and 128 characters)');
   
 
-  if(userCharLength <= 0 || userCharLength >= 127) {
+  if(userCharLength <= 0 || userCharLength >= 128) {
     alert("Password length must be between 1 and 128 characters. Please try again");
     var userCharLengthInput = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 1 and 128 characters)');
     }
 
     console.log(userCharLength);
 
-    userLowerCaseOrNo = window.prompt('Would you like your password to include lowercase characters?');
+    userLowerCaseOrNo = window.confirm("Click OK to include lowercase characters or Cancel to not include lowercase characters");
     console.log(userLowerCaseOrNo);
 
-    userUpperCaseOrNo = window.prompt('Would you like your password to include uppercase characters?');
+    userUpperCaseOrNo = window.confirm("Click OK to include uppercase characters or Cancel to not include uppercase characters");
     console.log(userUpperCaseOrNo);
 
-    userNumericCharOrNo = window.prompt('Would you like your password to include numeric characters?');
+    userNumericCharOrNo = window.confirm("Click OK to include numeric characters or Cancel to not include numeric characters"); 
     console.log(userNumericCharOrNo);
 
-    userSpecCharOrNo = window.prompt('Would you like your password to include special characters?');
+    userSpecCharOrNo = window.confirm("Click OK to include special characters or Cancel to not include special characters");
     console.log(userSpecCharOrNo);
 
-      if(userLowerCaseOrNo === "" && userUpperCaseOrNo === "" && userNumericCharOrNo === "" && userSpecCharOrNo === "") {
+      while(userLowerCaseOrNo === false && userUpperCaseOrNo === false && userNumericCharOrNo === false && userSpecCharOrNo === false) {
       alert("You must choose at least one password criteria");
-      userLowerCaseOrNo = window.prompt('Would you like your password to include lowercase characters?');
+      userLowerCaseOrNo = window.confirm("Click OK to include lowercase characters or Cancel to not include lowercase characters");
       console.log(userLowerCaseOrNo);
 
-      userUpperCaseOrNo = window.prompt('Would you like your password to include uppercase characters?');
+      userUpperCaseOrNo = window.confirm("Click OK to include uppercase characters or Cancel to not include uppercase characters");
       console.log(userUpperCaseOrNo);
 
-      userNumericCharOrNo = window.prompt('Would you like your password to include numeric characters?');
+      userNumericCharOrNo = window.confirm("Click OK to include numeric characters or Cancel to not include numeric characters"); 
       console.log(userNumericCharOrNo);
 
-      userSpecCharOrNo = window.prompt('Would you like your password to include special characters?');
+      userSpecCharOrNo = window.confirm("Click OK to include special characters or Cancel to not include special characters");
       console.log(userSpecCharOrNo);
   }
   
+
+  function randomizerCalculator() {
+    if (userLowerCaseOrNo === true && userUpperCaseOrNo === true && userNumericCharOrNo === true && userSpecCharOrNo === true) {
+      randomizerValue = randomizer07;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === false && userNumericCharOrNo === false && userSpecCharOrNo === true) {
+      randomizerValue = randomizer08;
+    }
+  }
+    
+  randomizerCalculator();
+
 
 }
 
@@ -204,25 +217,16 @@ generateBtn.addEventListener("click", startVPasswordGenerator);
 
 
 
-
-
-
-
-
-
-
-
 // this returns a value to the text field after running through the prompts
 
 function writePasswordToField() {
-    var password = randomizer04();
+    var password = randomizerValue();
     var passwordText = document.querySelector("#password");
   
     passwordText.value = "Thank you. Your password is: " + password;
 }
 
 generateBtn.addEventListener("click", writePasswordToField);
-
 
 
 
