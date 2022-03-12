@@ -196,11 +196,50 @@ var startVPasswordGenerator = function() {
   
 
   function randomizerCalculator() {
-    if (userLowerCaseOrNo === true && userUpperCaseOrNo === true && userNumericCharOrNo === true && userSpecCharOrNo === true) {
+    if (userLowerCaseOrNo === true && userUpperCaseOrNo === false && userNumericCharOrNo === false && userSpecCharOrNo === false) {
+      randomizerValue = randomizer01;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === true && userNumericCharOrNo === false && userSpecCharOrNo === false) {
+      randomizerValue = randomizer02;
+    }
+    else if (userLowerCaseOrNo === true && userUpperCaseOrNo === true && userNumericCharOrNo === false && userSpecCharOrNo === false) {
+      randomizerValue = randomizer03;
+    }
+    else if (userLowerCaseOrNo === true && userUpperCaseOrNo === true && userNumericCharOrNo === true && userSpecCharOrNo === false) {
+      randomizerValue = randomizer04;
+    }
+    else if (userLowerCaseOrNo === true && userUpperCaseOrNo === false && userNumericCharOrNo === true && userSpecCharOrNo === false) {
+      randomizerValue = randomizer05;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === true && userNumericCharOrNo === true && userSpecCharOrNo === false) {
+      randomizerValue = randomizer06;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === false && userNumericCharOrNo === true && userSpecCharOrNo === false) {
       randomizerValue = randomizer07;
     }
-    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === false && userNumericCharOrNo === false && userSpecCharOrNo === true) {
+    else if (userLowerCaseOrNo === true && userUpperCaseOrNo === true && userNumericCharOrNo === true && userSpecCharOrNo === true) {
       randomizerValue = randomizer08;
+    }
+    else if (userLowerCaseOrNo === true && userUpperCaseOrNo === false && userNumericCharOrNo === false && userSpecCharOrNo === true) {
+      randomizerValue = randomizer09;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === true && userNumericCharOrNo === false && userSpecCharOrNo === true) {
+      randomizerValue = randomizer10;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === false && userNumericCharOrNo === true && userSpecCharOrNo === true) {
+      randomizerValue = randomizer11;
+    }
+    else if (userLowerCaseOrNo === true && userUpperCaseOrNo === true && userNumericCharOrNo === false && userSpecCharOrNo === true) {
+      randomizerValue = randomizer12;
+    }
+    else if (userLowerCaseOrNo === true && userUpperCaseOrNo === false && userNumericCharOrNo === true && userSpecCharOrNo === true) {
+      randomizerValue = randomizer13;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === true && userNumericCharOrNo === true && userSpecCharOrNo === true) {
+      randomizerValue = randomizer14;
+    }
+    else if (userLowerCaseOrNo === false && userUpperCaseOrNo === false && userNumericCharOrNo === false && userSpecCharOrNo === true) {
+      randomizerValue = randomizer15;
     }
   }
     
