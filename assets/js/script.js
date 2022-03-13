@@ -156,15 +156,24 @@ function randomizer15() {
 // function to gather user inputs and conditional statements to sort input criteria
 
 var startVPasswordGenerator = function() {
-  userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 1 and 128 characters)');
+  userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 8 and 128 characters)');
   
-
-  if(userCharLength <= 0 || userCharLength >= 128) {
-    alert("Password length must be between 1 and 128 characters. Please try again");
-    var userCharLengthInput = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 1 and 128 characters)');
+  if(userCharLength <= 7 || userCharLength >= 129) {
+    alert("Password length must be between 8 and 128 characters. Please try again");
+    userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 8 and 128 characters)');
     }
+    if(userCharLength <= 7 || userCharLength >= 129) {
+      alert("Password length must be between 8 and 128 characters. Please try again");
+      userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 8 and 128 characters)');
+      }
+      if(userCharLength <= 7 || userCharLength >= 129) {
+        alert("Password length must be between 8 and 128 characters. Please try again");
+        userCharLength = window.prompt('Welcome. How many characters would you like your password to be? (choose a number between 8 and 128 characters)');
+        }
 
-    console.log(userCharLength);
+    alert('Your password will be ' + userCharLength + ' characters long');
+
+    console.log(userCharLength)
 
     userLowerCaseOrNo = window.confirm("Click OK to include lowercase characters or Cancel to not include lowercase characters");
     console.log(userLowerCaseOrNo);
@@ -177,6 +186,7 @@ var startVPasswordGenerator = function() {
 
     userSpecCharOrNo = window.confirm("Click OK to include special characters or Cancel to not include special characters");
     console.log(userSpecCharOrNo);
+
 
       while(userLowerCaseOrNo === false && userUpperCaseOrNo === false && userNumericCharOrNo === false && userSpecCharOrNo === false) {
       alert("You must choose at least one password criteria");

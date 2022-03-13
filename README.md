@@ -2,33 +2,34 @@
 
 ## Description
 
-Online security is a big deal! For people with access to sensitive information, securing that information is a critial part of working online. And in order to provide adequate security, sometimes information needs to be protected with a strong, unbreakable password.
+Online security is a big deal! For people with access to sensitive information, securing that information is a critical part of working online. And in order to provide adequate security, sometimes information needs to be protected with a strong and unbreakable password.
 
-Enter the purpose of this project: to create an application that generates a random passowrd based on user-selected length and character criteria. The goal was to create a simple, straightforward app that operates in the browser, has a clean and simple interface, and can be accessed from anywhere.
+Enter the purpose of this project: to create an application that generates a random password based on user-selected length and character criteria. The goal was to create a simple, straightforward app that operates in the browser, has a clean and simple interface, and can be accessed from anywhere.
 
-The achieve this goal, the following were accomplished as part of the application: 
+The achieve this goal, the following items were accomplished as part of the application: 
 
-- customize html and css elements for page to accept user inputs
+- customize html and css elements for the page to accept user inputs
 - present the user with a prompt asking for their desired length of password (between 8 and 128 characters)
-- present the user with a series of prompts asking the user for their desired critera for the characters they want included in the password 
+- present the user with a series of prompts asking for their desired criteria of characters they want included in the password 
 - ensure that the user is not able to enter the wrong or incorrect prompts
-- generate a unique password based on the user inputs that is written to the page for the user
+- generate a unique password based on the user inputs that is written to the page
 
-After accomplishing those aspects of the application the user can simply, and in just a matter of moments, generate their own unique password of their desired length and character-inclusion.
+After accomplishing those aspects of the application, the user can simply, and in just a matter of moments, generate their own unique password of their desired length and character-inclusion.
+
 
 Link to the deployed website: https://vik-maharaj.github.io/password-generator/
 
 
 ## Installation
 
-The repo contains an index.html file, and assets folder containing a CSS file sytlesheet and corresponding images. These files were deployed at the above mentioned link using GitHub Pages. The repo can also be cloned to a local machine and the index.html file can be opened in any web browser or IDE of choice.
+The repo contains an index.html file, and assets folder containing a CSS file sytlesheet, an image folder, and a javascript folder. These files were deployed at the above-mentioned link using GitHub Pages. The repo can also be cloned to a local machine and the index.html file can be opened in any web browser or IDE of choice.
 
 
 ## Usage
 
-Using any dekstop browser, open the above mentioned link to view the webpage.
+Using any desktop browser, open the above-mentioned link to view the webpage... and to generate your own unique password!
 
-![Horiseon Website Screenshot](assets/images/screenshot.png)
+![Vik's Password Generator Screenshot](assets/images/screenshot.png)
 
 
 ## Credits
@@ -56,5 +57,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTH
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
