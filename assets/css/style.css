@@ -10,6 +10,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -44,7 +45,7 @@ header h1 {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) -.5px 2px 6px 2px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
@@ -84,6 +85,8 @@ header h1 {
 
 .btn {
   border: none;
+  font-family: 'Staatliches', sans-serif;
+  letter-spacing: 1.25px;
   background-color: blue;
   box-shadow: -2px 2px 3px rgb(73, 73, 73);
   border-radius: 25px;
